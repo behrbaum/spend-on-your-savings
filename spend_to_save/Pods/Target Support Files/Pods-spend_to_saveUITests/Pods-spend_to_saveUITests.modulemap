@@ -1,0 +1,6 @@
+framework module Pods_spend_to_saveUITests {
+  umbrella header "Pods-spend_to_saveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

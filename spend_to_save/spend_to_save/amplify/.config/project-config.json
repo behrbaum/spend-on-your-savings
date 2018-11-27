@@ -1,0 +1,11 @@
+{
+    "projectName": "spendtosave",
+    "projectPath": "/Users/elenaiaconis/Documents/Senior_Design/spend-on-your-savings/spend_to_save/spend_to_save",
+    "defaultEditor": "sublime",
+    "frontendHandler": {
+        "ios": "/Users/elenaiaconis/.nvm/versions/node/v9.5.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-ios"
+    },
+    "providers": {
+        "awscloudformation": "/Users/elenaiaconis/.nvm/versions/node/v9.5.0/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

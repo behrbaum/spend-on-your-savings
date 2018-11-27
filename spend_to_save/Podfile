@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'spend_to_save' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for spend_to_save
+  pod 'AWSCore', '~> 2.7.0'
+
+  target 'spend_to_saveTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'spend_to_saveUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
