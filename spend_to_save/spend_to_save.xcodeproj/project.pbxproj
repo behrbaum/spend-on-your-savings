@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64B6E8C721B9A5A100342CC5 /* ManualSaveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6E8C621B9A5A100342CC5 /* ManualSaveMoneyViewController.swift */; };
+		64B6E8C921B9A78A00342CC5 /* MenuSaveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6E8C821B9A78A00342CC5 /* MenuSaveMoneyViewController.swift */; };
+		64B6E8CB21B9B57200342CC5 /* MenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6E8CA21B9B57200342CC5 /* MenuItemViewController.swift */; };
 		64E416BC2192914F00C1E370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E416BB2192914F00C1E370 /* AppDelegate.swift */; };
 		64E416BE2192914F00C1E370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E416BD2192914F00C1E370 /* ViewController.swift */; };
 		64E416C12192914F00C1E370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E416BF2192914F00C1E370 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64B6E8C621B9A5A100342CC5 /* ManualSaveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSaveMoneyViewController.swift; sourceTree = "<group>"; };
+		64B6E8C821B9A78A00342CC5 /* MenuSaveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSaveMoneyViewController.swift; sourceTree = "<group>"; };
+		64B6E8CA21B9B57200342CC5 /* MenuItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewController.swift; sourceTree = "<group>"; };
 		64E416B82192914F00C1E370 /* spend_to_save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spend_to_save.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E416BB2192914F00C1E370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E416BD2192914F00C1E370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +113,9 @@
 				64E416BD2192914F00C1E370 /* ViewController.swift */,
 				64E416BF2192914F00C1E370 /* Main.storyboard */,
 				64E416EF2192A5B500C1E370 /* SaveMoney.storyboard */,
+				64B6E8CA21B9B57200342CC5 /* MenuItemViewController.swift */,
+				64B6E8C821B9A78A00342CC5 /* MenuSaveMoneyViewController.swift */,
+				64B6E8C621B9A5A100342CC5 /* ManualSaveMoneyViewController.swift */,
 				64E416F72192A9B800C1E370 /* MoneyValue.storyboard */,
 				64E416F12192A79400C1E370 /* SaveMoneyController.swift */,
 				64E416C22192915200C1E370 /* Assets.xcassets */,
@@ -267,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B6E8CB21B9B57200342CC5 /* MenuItemViewController.swift in Sources */,
 				64E416F22192A79400C1E370 /* SaveMoneyController.swift in Sources */,
+				64B6E8C921B9A78A00342CC5 /* MenuSaveMoneyViewController.swift in Sources */,
 				64E416BE2192914F00C1E370 /* ViewController.swift in Sources */,
+				64B6E8C721B9A5A100342CC5 /* ManualSaveMoneyViewController.swift in Sources */,
 				64E416BC2192914F00C1E370 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
