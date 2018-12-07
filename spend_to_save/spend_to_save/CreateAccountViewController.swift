@@ -13,6 +13,7 @@ class CreateAccountViewController: UIViewController {
     
     var appSyncClient: AWSAppSyncClient?
     
+    @IBOutlet weak var signUpButton: UIButton!
     //@IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,10 @@ class CreateAccountViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //loginButton.layer.borderWidth = 1
         //loginButton.layer.borderColor = UIColor.white.cgColor
+    }
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        // do things
+        print("sign up pressed")
     }
     
    
