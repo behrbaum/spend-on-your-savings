@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         print("login button pressed")
     }
     
+    @IBAction func createAccountButtonPressed(_ sender: Any) {
+        runMutation()
+        print("create account button pressed")
+    }
+    
     func runMutation(){
         let mutationInput = CreateTodoInput(name: "Use AppSync", description:"Realtime and Offline")
         appSyncClient?.perform(mutation: CreateTodoMutation(input: mutationInput)) { (result, error) in

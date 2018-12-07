@@ -8,7 +8,10 @@ target 'spend_to_save' do
   # Pods for spend_to_save
   pod 'AWSCore', '~> 2.7.0'
   pod 'AWSAppSync', '~> 2.6.24'
-
+  pod 'AWSMobileClient', '~> 2.7.0'      # Required dependency
+  pod 'AWSAuthUI', '~> 2.7.0'            # Optional dependency required to use drop-in UI
+  pod 'AWSUserPoolsSignIn', '~> 2.7.0'   # Optional dependency required to use drop-in UI
+  
   target 'spend_to_saveTests' do
     inherit! :search_paths
     # Pods for testing

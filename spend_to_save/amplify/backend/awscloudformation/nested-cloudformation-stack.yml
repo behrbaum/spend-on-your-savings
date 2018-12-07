@@ -90,6 +90,81 @@
 					"DeploymentTimestamp": "1544147944052"
 				}
 			}
+		},
+		"storageGoalTable": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/spendtosave-20181206205036-deployment/amplify-cfn-templates/storage/GoalTable-cloudformation-template.json",
+				"Parameters": {
+					"tableName": "GoalTable",
+					"partitionKeyName": "userId",
+					"partitionKeyType": "S",
+					"sortKeyName": "goalId",
+					"sortKeyType": "S"
+				}
+			}
+		},
+		"storageSavingTable": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/spendtosave-20181206205036-deployment/amplify-cfn-templates/storage/SavingTable-cloudformation-template.json",
+				"Parameters": {
+					"tableName": "SavingTable",
+					"partitionKeyName": "userId",
+					"partitionKeyType": "S",
+					"sortKeyName": "amount",
+					"sortKeyType": "N"
+				}
+			}
+		},
+		"authUserTable": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/spendtosave-20181206205036-deployment/amplify-cfn-templates/auth/UserTable-cloudformation-template.yml",
+				"Parameters": {
+					"userPoolName": "spendtosave4651e298_userpool_4651e298",
+					"autoVerifiedAttributes": "email",
+					"mfaConfiguration": "OFF",
+					"mfaTypes": "SMS Text Message",
+					"roleName": "UserTable_sns-role",
+					"roleExternalId": "UserTable_role_external_id",
+					"policyName": "UserTable-sns-policy",
+					"smsAuthenticationMessage": "Your authentication code is {####}",
+					"smsVerificationMessage": "Your verification code is {####}",
+					"emailVerificationSubject": "emailVerify",
+					"emailVerificationMessage": "'{####}'",
+					"defaultPasswordPolicy": false,
+					"passwordPolicyMinLength": 8,
+					"passwordPolicyCharacters": "Requires Lowercase,Requires Uppercase,Requires Numbers,Requires Symbols",
+					"requiredAttributes": "family_name,given_name,name,phone_number,email",
+					"userpoolClientName": "UserTable_app_client",
+					"userpoolClientGenerateSecret": true,
+					"userpoolClientRefreshTokenValidity": "30",
+					"userpoolClientReadAttributes": "email",
+					"mfaLambdaRole": "UserTable_totp_lambda_role",
+					"mfaLambdaLogPolicy": "UserTable_totp_lambda_log_policy",
+					"mfaPassRolePolicy": "UserTable_totp_pass_role_policy",
+					"mfaLambdaIAMPolicy": "UserTable_totp_lambda_iam_policy",
+					"userpoolClientLambdaRole": "UserTable_userpoolclient_lambda_role",
+					"userpoolClientLogPolicy": "UserTable_userpoolclient_lambda_log_policy",
+					"userpoolClientLambdaPolicy": "UserTable_userpoolclient_lambda_iam_policy",
+					"userpoolClientSetAttributes": false,
+					"useDefault": "manual",
+					"authSelections": "userPoolOnly",
+					"resourceName": "UserTable",
+					"unAuthRoleName": "spendtosave-20181206205036-unauthRole",
+					"authRoleName": "spendtosave-20181206205036-authRole",
+					"unAuthRoleArn": "arn:aws:iam::403672659568:role/spendtosave-20181206205036-unauthRole",
+					"authRoleArn": "arn:aws:iam::403672659568:role/spendtosave-20181206205036-authRole"
+				}
+			}
+		},
+		"hostingS3AndCloudFront": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/spendtosave-20181206205036-deployment/amplify-cfn-templates/hosting/template.json",
+				"Parameters": {}
+			}
 		}
 	},
 	"Outputs": {

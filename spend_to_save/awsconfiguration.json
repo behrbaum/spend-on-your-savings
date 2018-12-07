@@ -11,5 +11,18 @@
             "AuthMode": "API_KEY",
             "ApiKey": "da2-kglmiun6urbunhdnjszjsbriii"
         }
+    },
+    "DynamoDBObjectMapper": {
+        "Default": {
+            "Region": "us-east-2"
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-2_GEk6HKPXA",
+            "AppClientId": "9hgjhcrkac2ug5hcpabf15rd3",
+            "AppClientSecret": "h7vcmahldb0g3hs6q83bkd0pkgj7i029gh1smj6pbnkle5b8oel",
+            "Region": "us-east-2"
+        }
     }
 }

@@ -1,0 +1,7 @@
+{
+    "tableName": "SavingTable",
+    "partitionKeyName": "userId",
+    "partitionKeyType": "S",
+    "sortKeyName": "amount",
+    "sortKeyType": "N"
+}

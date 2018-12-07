@@ -1,0 +1,7 @@
+{
+    "tableName": "GoalTable",
+    "partitionKeyName": "userId",
+    "partitionKeyType": "S",
+    "sortKeyName": "goalId",
+    "sortKeyType": "S"
+}
