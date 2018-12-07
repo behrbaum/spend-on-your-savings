@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "spendtosave",
+    "schemaGraphql": "s3://spendtosave-20181206205036-deployment/amplify-appsync-files/schema.graphql.1544147944052",
+    "ResolverBucket": "spendtosave-20181206205036-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1544147944052"
+}

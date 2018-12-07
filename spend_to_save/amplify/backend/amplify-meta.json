@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "spendtosave-20181206205036-authRole",
+			"UnauthRoleArn": "arn:aws:iam::403672659568:role/spendtosave-20181206205036-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::403672659568:role/spendtosave-20181206205036-authRole",
+			"Region": "us-east-2",
+			"DeploymentBucketName": "spendtosave-20181206205036-deployment",
+			"UnauthRoleName": "spendtosave-20181206205036-unauthRole",
+			"StackName": "spendtosave-20181206205036",
+			"StackId": "arn:aws:cloudformation:us-east-2:403672659568:stack/spendtosave-20181206205036/7dc19390-f9c2-11e8-a8d0-06a8021e9aec"
+		}
+	},
+	"api": {
+		"spendtosave": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "5zq2p3hgmvcnvl5s76c6qp32mu",
+				"GraphQLAPIEndpointOutput": "https://rwwfxosbj5cvxefblelxjwqkuy.appsync-api.us-east-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-kglmiun6urbunhdnjszjsbriii"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/spendtosave-20181206205036-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apispendtosave"
+			},
+			"lastPushTimeStamp": "2018-12-07T02:01:26.724Z",
+			"lastPushDirHash": "Fj7T9JnaRNLwg8NbNpcQk0+WcaA="
+		}
+	}
+}

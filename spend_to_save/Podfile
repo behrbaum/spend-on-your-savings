@@ -7,6 +7,7 @@ target 'spend_to_save' do
 
   # Pods for spend_to_save
   pod 'AWSCore', '~> 2.7.0'
+  pod 'AWSAppSync', '~> 2.6.24'
 
   target 'spend_to_saveTests' do
     inherit! :search_paths
