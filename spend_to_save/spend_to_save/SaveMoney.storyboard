@@ -111,7 +111,6 @@
                                 </state>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="IBn-ri-VHf" eventType="touchUpInside" id="JBo-lk-Lp5"/>
-                                    <segue destination="hqP-CO-EyG" kind="show" id="EOA-UR-2ek"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which item did you purchase?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-HX-ycA">
@@ -147,26 +146,33 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="THK-04-Js4" id="VKE-vJ-W6x"/>
+                                    <outlet property="delegate" destination="THK-04-Js4" id="apB-QE-Xhy"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.27683141239999998" green="0.74593183289999998" blue="0.33122804839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="xoN-jV-Bqm"/>
                     </view>
+                    <connections>
+                        <segue destination="hqP-CO-EyG" kind="show" identifier="menuItemSegue" id="nGe-oO-TQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4x-4d-q9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="-167.76611694152925"/>
         </scene>
-        <!--Menu Item View Controller-->
+        <!--Ideal Menu Item View Controller-->
         <scene sceneID="GmP-62-vvu">
             <objects>
-                <viewController id="hqP-CO-EyG" customClass="MenuItemViewController" customModule="spend_to_save" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hqP-CO-EyG" customClass="IdealMenuItemViewController" customModule="spend_to_save" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h3Z-Gx-zCc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which item did you want to purchase?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdP-jF-VIr">
-                                <rect key="frame" x="16" y="103" width="343" height="194"/>
+                                <rect key="frame" x="16" y="71" width="343" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -196,10 +202,32 @@
                                     <segue destination="ItX-D4-hel" kind="show" id="tAa-J4-IcT"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Y8-hc-PKN">
+                                <rect key="frame" x="29" y="262" width="316" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="VZn-Dg-5yz">
+                                        <rect key="frame" x="0.0" y="28" width="316" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VZn-Dg-5yz" id="7kH-1B-XHN">
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hqP-CO-EyG" id="yOJ-xF-DQM"/>
+                                    <outlet property="delegate" destination="hqP-CO-EyG" id="rhY-HX-4fX"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.27683141239999998" green="0.74593183289999998" blue="0.33122804839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vOu-ez-Ur5"/>
                     </view>
+                    <connections>
+                        <segue destination="ItX-D4-hel" kind="show" identifier="backToMain" id="eg2-iv-gZ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsW-Ij-Szc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,7 +239,7 @@
                 <viewControllerPlaceholder storyboardName="MoneyValue" referencedIdentifier="MoneyValue" id="ItX-D4-hel" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDf-dg-geX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098" y="237"/>
+            <point key="canvasLocation" x="1659" y="392"/>
         </scene>
         <!--Manual Save Money View Controller-->
         <scene sceneID="xIu-97-qJB">
@@ -251,6 +279,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="IBn-ri-VHf" eventType="touchUpInside" id="cg4-mK-JVT"/>
+                                    <segue destination="ItX-D4-hel" kind="show" id="20I-vI-4Ni"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGB-zg-XnW">
@@ -281,6 +310,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bsf-02-StO"/>
+        <segue reference="20I-vI-4Ni"/>
     </inferredMetricsTieBreakers>
 </document>

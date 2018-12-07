@@ -1,5 +1,5 @@
 //
-//  MenuItemViewController.swift
+//  IdealMenuItemViewController.swift
 //  spend_to_save
 //
 //  Created by OIDUser on 12/6/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MenuItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class IdealMenuItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     let menu = ["Small Coffee", "Medium Coffee", "Large Coffee"]
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class MenuItemViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "menuItemSegue", sender: self)
+        self.performSegue(withIdentifier: "backToMain", sender: self)
     }
 
 }
