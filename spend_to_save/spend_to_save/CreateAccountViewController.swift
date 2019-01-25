@@ -19,9 +19,10 @@ class CreateAccountViewController: UIViewController {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appSyncClient = appDelegate.appSyncClient
-        // Do any additional setup after loading the view, typically from a nib.
-        //loginButton.layer.borderWidth = 1
-        //loginButton.layer.borderColor = UIColor.white.cgColor
+        
+        // Pad and round the 'Create Account' Button
+        signUpButton.layer.cornerRadius = 5
+        signUpButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
     @IBAction func signUpButtonPressed(_ sender: Any) {
         // do things
