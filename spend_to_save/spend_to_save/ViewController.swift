@@ -13,14 +13,15 @@ class ViewController: UIViewController {
 
     var appSyncClient: AWSAppSyncClient?
     
-    //@IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var createAccountButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appSyncClient = appDelegate.appSyncClient
-        // Do any additional setup after loading the view, typically from a nib.
-        //loginButton.layer.borderWidth = 1
-        //loginButton.layer.borderColor = UIColor.white.cgColor
+        
+        // Pad and round the 'Create Account' Button
+        createAccountButton.layer.cornerRadius = 5
+        createAccountButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
