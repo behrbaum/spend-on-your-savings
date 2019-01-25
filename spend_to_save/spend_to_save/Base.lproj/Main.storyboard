@@ -24,16 +24,14 @@
                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-6G-dNi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-6G-dNi">
                                 <rect key="frame" x="16" y="304" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-sL-iex">
-                                <rect key="frame" x="16" y="348" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-sL-iex">
+                                <rect key="frame" x="16" y="349" width="97" height="30"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,13 +64,11 @@
                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="008080_Swatch" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-FG-HVF">
-                                <rect key="frame" x="81" y="328" width="269" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="008080_Swatch" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-FG-HVF">
+                                <rect key="frame" x="13" y="328" width="336" height="1"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-we-AI1">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-we-AI1">
                                 <rect key="frame" x="81" y="290" width="269" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -81,9 +77,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vSs-GF-Sjj" firstAttribute="top" secondItem="rsW-gB-k5y" secondAttribute="bottom" constant="10" id="FYR-Mc-YcC"/>
+                            <constraint firstItem="EWa-6G-dNi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="J0u-u7-FXG"/>
                             <constraint firstItem="rsW-gB-k5y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="QdX-cA-ofr"/>
                             <constraint firstItem="rsW-gB-k5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgP-Eq-cmd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GU4-FG-HVF" secondAttribute="trailing" constant="10" id="dKv-B9-THn"/>
+                            <constraint firstItem="GU4-FG-HVF" firstAttribute="top" secondItem="xiZ-we-AI1" secondAttribute="bottom" constant="5" id="ibL-hB-oEp"/>
+                            <constraint firstItem="FFG-sL-iex" firstAttribute="top" secondItem="EWa-6G-dNi" secondAttribute="bottom" constant="15" id="nYW-J0-fjw"/>
                             <constraint firstItem="vSs-GF-Sjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeG-Sy-STt"/>
+                            <constraint firstItem="xiZ-we-AI1" firstAttribute="leading" secondItem="EWa-6G-dNi" secondAttribute="trailing" constant="5" id="yy7-Tk-Vn3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
