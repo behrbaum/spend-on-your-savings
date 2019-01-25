@@ -9,11 +9,14 @@
 import UIKit
 
 class MenuSaveMoneyViewController: UIViewController {
-
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Pad and round the 'Save' Button
+        saveButton.layer.cornerRadius = 5
+        saveButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
     
 

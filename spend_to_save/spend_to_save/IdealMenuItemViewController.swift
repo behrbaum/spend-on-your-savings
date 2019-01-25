@@ -12,8 +12,19 @@ class IdealMenuItemViewController: UIViewController, UITableViewDelegate, UITabl
 
     let menu = ["Small Coffee", "Medium Coffee", "Large Coffee"]
     
+    @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Pad and round the 'Skip' Button
+        skipButton.layer.cornerRadius = 5
+        skipButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
+        
+        // Pad and round the 'Next' Button
+        nextButton.layer.cornerRadius = 5
+        nextButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,6 +34,7 @@ class IdealMenuItemViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = menu[indexPath.row]
+        cell.textLabel?.font = UIFont(name:"DIN Condensed", size:20)
         print(menu[indexPath.row])
         return cell
     }
