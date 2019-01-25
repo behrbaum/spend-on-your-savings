@@ -20,7 +20,7 @@ class CreateAccountViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appSyncClient = appDelegate.appSyncClient
         
-        // Pad and round the 'Sign Up' Button
+        // Pad and round the 'Continue' Button
         signUpButton.layer.cornerRadius = 5
         signUpButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }

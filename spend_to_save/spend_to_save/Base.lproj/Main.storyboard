@@ -113,30 +113,30 @@
                             <mask key="constraints">
                                 <exclude reference="cgE-du-2OP"/>
                                 <exclude reference="vGB-gJ-Wxb"/>
-                                <exclude reference="IgC-FZ-EB3"/>
                                 <exclude reference="GMX-dd-hpB"/>
-                                <exclude reference="ghr-5W-tmX"/>
+                                <exclude reference="IgC-FZ-EB3"/>
                                 <exclude reference="ReE-oD-9Zl"/>
                                 <exclude reference="SqL-kM-t2x"/>
+                                <exclude reference="ghr-5W-tmX"/>
                                 <exclude reference="yED-hT-7kt"/>
-                                <exclude reference="ij9-6i-mCi"/>
                                 <exclude reference="1R6-90-Hm7"/>
                                 <exclude reference="OCd-fs-djt"/>
+                                <exclude reference="ij9-6i-mCi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
                                 <include reference="cgE-du-2OP"/>
                                 <include reference="vGB-gJ-Wxb"/>
-                                <include reference="IgC-FZ-EB3"/>
                                 <include reference="GMX-dd-hpB"/>
-                                <include reference="ghr-5W-tmX"/>
+                                <include reference="IgC-FZ-EB3"/>
                                 <include reference="ReE-oD-9Zl"/>
                                 <include reference="SqL-kM-t2x"/>
+                                <include reference="ghr-5W-tmX"/>
                                 <include reference="yED-hT-7kt"/>
-                                <include reference="ij9-6i-mCi"/>
                                 <include reference="1R6-90-Hm7"/>
                                 <include reference="OCd-fs-djt"/>
+                                <include reference="ij9-6i-mCi"/>
                             </mask>
                         </variation>
                     </view>
@@ -202,15 +202,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NC-ob-LwY">
-                                <rect key="frame" x="148" y="299" width="79" height="42"/>
+                                <rect key="frame" x="146.66666666666666" y="299" width="82" height="42"/>
                                 <color key="backgroundColor" red="0.81960784310000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
-                                <state key="normal" title="Sign Up!">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="pk3-kI-KxE" eventType="touchUpInside" id="HTT-qi-rKT"/>
-                                    <segue destination="Cyi-Zs-fl3" kind="show" id="9PC-hx-gQm"/>
+                                    <segue destination="WWV-DH-tee" kind="show" id="Rvh-Ur-t7h"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="008080_Swatch" translatesAutoresizingMaskIntoConstraints="NO" id="083-C0-5zK">
@@ -295,15 +295,15 @@
                                 <exclude reference="B6M-Ti-jbd"/>
                                 <exclude reference="jEc-33-OA3"/>
                                 <exclude reference="XIY-uV-c1c"/>
-                                <exclude reference="teW-2B-yEH"/>
                                 <exclude reference="rKE-jM-cAo"/>
-                                <exclude reference="nt7-vZ-C1Y"/>
+                                <exclude reference="teW-2B-yEH"/>
                                 <exclude reference="Ifi-ia-Jyl"/>
                                 <exclude reference="Ojn-uT-5lV"/>
                                 <exclude reference="i9F-br-KCm"/>
                                 <exclude reference="mp7-e5-xLu"/>
                                 <exclude reference="sgL-WW-ssl"/>
                                 <exclude reference="xZ4-2r-8el"/>
+                                <exclude reference="nt7-vZ-C1Y"/>
                                 <exclude reference="DIc-ht-fra"/>
                             </mask>
                         </variation>
@@ -322,15 +322,15 @@
                                 <exclude reference="B6M-Ti-jbd"/>
                                 <include reference="jEc-33-OA3"/>
                                 <include reference="XIY-uV-c1c"/>
-                                <include reference="teW-2B-yEH"/>
                                 <include reference="rKE-jM-cAo"/>
-                                <include reference="nt7-vZ-C1Y"/>
+                                <include reference="teW-2B-yEH"/>
                                 <exclude reference="Ifi-ia-Jyl"/>
                                 <exclude reference="Ojn-uT-5lV"/>
                                 <include reference="i9F-br-KCm"/>
                                 <exclude reference="mp7-e5-xLu"/>
                                 <include reference="sgL-WW-ssl"/>
                                 <include reference="xZ4-2r-8el"/>
+                                <include reference="nt7-vZ-C1Y"/>
                                 <include reference="DIc-ht-fra"/>
                             </mask>
                         </variation>
@@ -343,13 +343,70 @@
             </objects>
             <point key="canvasLocation" x="996" y="814.28571428571433"/>
         </scene>
+        <!--Add Goal View Controller-->
+        <scene sceneID="sQS-Mt-1HF">
+            <objects>
+                <viewController id="WWV-DH-tee" customClass="AddGoalViewController" customModule="spend_to_save" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZ6-X8-dOe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Goal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOb-ms-8XA">
+                                <rect key="frame" x="109" y="89" width="157" height="43"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="43"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.46274509800000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-ld-jDh">
+                                <rect key="frame" x="60" y="218" width="73" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="pk3-kI-KxE" eventType="touchUpInside" id="0jX-EG-WJb"/>
+                                    <segue destination="Cyi-Zs-fl3" kind="show" id="h3r-bV-r1w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6a-et-Xdt">
+                                <rect key="frame" x="196" y="218" width="115" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                <state key="normal" title="Add Goal">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="pk3-kI-KxE" eventType="touchUpInside" id="d38-Eb-dMj"/>
+                                    <segue destination="Cyi-Zs-fl3" kind="show" id="dxN-q2-mJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yOb-ms-8XA" firstAttribute="top" secondItem="JHE-Mv-PgU" secondAttribute="top" constant="45" id="8ZD-zt-zPY"/>
+                            <constraint firstItem="yOb-ms-8XA" firstAttribute="centerX" secondItem="tZ6-X8-dOe" secondAttribute="centerX" id="HHX-BM-8MZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JHE-Mv-PgU"/>
+                    </view>
+                    <connections>
+                        <outlet property="addGoalButton" destination="W6a-et-Xdt" id="aI0-14-ps0"/>
+                        <outlet property="skipButton" destination="Tjb-ld-jDh" id="Oct-kQ-rsa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gm1-Ru-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.5999999999999" y="813.54679802955673"/>
+        </scene>
     </scenes>
     <resources>
         <image name="008080_Swatch" width="336" height="280"/>
         <image name="orange-arrow" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9PC-hx-gQm"/>
+        <segue reference="dxN-q2-mJI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
