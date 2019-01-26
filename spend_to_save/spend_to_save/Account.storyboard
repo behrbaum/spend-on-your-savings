@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7JN-m0-Zjb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,22 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Account View Controller-->
-        <scene sceneID="Mud-UH-03v">
+        <!--View Controller-->
+        <scene sceneID="Sr2-Wr-Wqe">
             <objects>
-                <viewController id="QCJ-BI-q9G" customClass="AccountViewController" customModule="spend_to_save" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K40-9N-oa7">
+                <viewController id="7JN-m0-Zjb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sh-gV-xwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-h1-Kdc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7p-JS-kmw">
                                 <rect key="frame" x="101" y="65" width="173" height="48"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
                                 <color key="textColor" red="0.93333333330000001" green="0.46274509800000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bES-fQ-cc2">
-                                <rect key="frame" x="152" y="237" width="73" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGT-XS-bMS">
+                                <rect key="frame" x="152" y="239" width="73" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81960784310000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
@@ -33,29 +33,29 @@
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2a0-rZ-S1I" kind="show" id="heY-St-i0T"/>
+                                    <segue destination="bPE-zL-vww" kind="show" id="zTg-3U-5Xk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QoQ-h1-Kdc" firstAttribute="centerX" secondItem="K40-9N-oa7" secondAttribute="centerX" id="2Uo-qW-ewd"/>
-                            <constraint firstItem="QoQ-h1-Kdc" firstAttribute="top" secondItem="xyL-7m-oGk" secondAttribute="top" constant="45" id="vtd-DV-tCV"/>
+                            <constraint firstItem="X7p-JS-kmw" firstAttribute="top" secondItem="jam-Ot-DJ3" secondAttribute="top" constant="45" id="IvC-5M-eeL"/>
+                            <constraint firstItem="X7p-JS-kmw" firstAttribute="centerX" secondItem="8sh-gV-xwU" secondAttribute="centerX" id="Sed-0l-ut5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xyL-7m-oGk"/>
+                        <viewLayoutGuide key="safeArea" id="jam-Ot-DJ3"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-7O-gvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwO-0z-9Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="101.19940029985008"/>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-42.728635682158924"/>
         </scene>
         <!--MoneyValue-->
-        <scene sceneID="fvn-Nh-wne">
+        <scene sceneID="2ab-kE-hth">
             <objects>
-                <viewControllerPlaceholder storyboardName="MoneyValue" referencedIdentifier="MoneyValue" id="2a0-rZ-S1I" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ZA-OS-4mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MoneyValue" referencedIdentifier="MoneyValue" id="bPE-zL-vww" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9SD-zh-Q4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621" y="-10"/>
+            <point key="canvasLocation" x="625" y="-156"/>
         </scene>
     </scenes>
 </document>

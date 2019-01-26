@@ -72,6 +72,9 @@
                                 <state key="normal" title="My Account">
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Qyn-Ed-Gce" kind="show" id="fOm-xK-mMV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,6 +97,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqK-O6-BtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="722" y="-332"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="P7n-60-YZI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="Qyn-Ed-Gce" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAQ-hf-5eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="-178"/>
         </scene>
     </scenes>
 </document>

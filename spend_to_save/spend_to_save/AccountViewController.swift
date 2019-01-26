@@ -10,10 +10,14 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Pad and round the 'Back to Home' Button
+//        backButton.layer.cornerRadius = 5
+//        backButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
     
 
