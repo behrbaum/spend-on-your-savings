@@ -7,18 +7,15 @@
 //
 
 import UIKit
-import AWSAppSync
 
 class CreateAccountViewController: UIViewController {
     
-    var appSyncClient: AWSAppSyncClient?
     
     @IBOutlet weak var signUpButton: UIButton!
     //@IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appSyncClient = appDelegate.appSyncClient
         
         // Pad and round the 'Continue' Button
         signUpButton.layer.cornerRadius = 5

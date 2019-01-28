@@ -6,11 +6,12 @@ target 'spend_to_save' do
   use_frameworks!
 
   # Pods for spend_to_save
-  pod 'AWSCore', '~> 2.7.0'
-  pod 'AWSAppSync', '~> 2.6.24'
-  pod 'AWSMobileClient', '~> 2.7.0'      # Required dependency
-  pod 'AWSAuthUI', '~> 2.7.0'            # Optional dependency required to use drop-in UI
-  pod 'AWSUserPoolsSignIn', '~> 2.7.0'   # Optional dependency required to use drop-in UI
+  pod 'AWSCore', '~> 2.8.4'
+  pod 'AWSAppSync', '~> 2.9.0'
+  pod 'AWSDynamoDB'
+  pod 'AWSUserPoolsSignIn', '~> 2.8.4'
+  pod 'AWSAuthUI', '~> 2.8.4'
+  pod 'AWSMobileClient', '~> 2.8.4'
   
   target 'spend_to_saveTests' do
     inherit! :search_paths

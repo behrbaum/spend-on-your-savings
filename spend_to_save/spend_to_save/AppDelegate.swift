@@ -7,36 +7,33 @@
 //
 
 import UIKit
-import AWSAppSync
 import AWSMobileClient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var appSyncClient: AWSAppSyncClient?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        AWSMobileClient.sharedInstance().initialize { (userState, error) in
-            if let userState = userState {
-                print("UserState: \(userState.rawValue)")
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
-            }
-        }
-        // Connecting to AWS
-        let databaseURL = URL(fileURLWithPath:NSTemporaryDirectory()).appendingPathComponent("Todo-5zq2p3hgmvcnvl5s76c6qp32mu")
+    // Add a AWSMobileClient call in application:open url
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
         
-        do {
-            //AppSync configuration & client initialization
-            let appSyncConfig = try AWSAppSyncClientConfiguration(appSyncClientInfo: AWSAppSyncClientInfo(),databaseURL: databaseURL)
-            appSyncClient = try AWSAppSyncClient(appSyncConfig: appSyncConfig)
-        } catch {
-            print("Error initializing appsync client. \(error)")
-        }
-        return true
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+        
+    }
+    
+    // Add a AWSMobileClient call in application:didFinishLaunching
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions:
+        [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, didFinishLaunchingWithOptions:
+            launchOptions)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -7,44 +7,41 @@
 //
 
 import UIKit
-import AWSAppSync
+import AWSAuthCore
+import AWSAuthUI
 
 class ViewController: UIViewController {
-
-    var appSyncClient: AWSAppSyncClient?
     
     @IBOutlet weak var createAccountButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appSyncClient = appDelegate.appSyncClient
         
         // Pad and round the 'Create Account' Button
         createAccountButton.layer.cornerRadius = 5
         createAccountButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
+        
+        if !AWSSignInManager.sharedInstance().isLoggedIn {
+//            AWSAuthUIViewController
+//                .presentViewController(with: self.navigationController!,
+//                                       configuration: nil,
+//                                       completionHandler: { (provider: AWSSignInProvider, error: Error?) in
+//                                        if error != nil {
+//                                            print("Error occurred: \(String(describing: error))")
+//                                        } else {
+//                                            // Sign in successful.
+//                                        }
+//                })
+        }
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        runMutation()
         print("login button pressed")
     }
     
     @IBAction func createAccountButtonPressed(_ sender: Any) {
-        runMutation()
         print("create account button pressed")
     }
     
-    func runMutation(){
-        let mutationInput = CreateTodoInput(name: "Use AppSync", description:"Realtime and Offline")
-        appSyncClient?.perform(mutation: CreateTodoMutation(input: mutationInput)) { (result, error) in
-            if let error = error as? AWSAppSyncClientError {
-                print("Error occurred: \(error.localizedDescription )")
-            }
-            if let resultError = result?.errors {
-                print("Error saving the item on server: \(resultError)")
-                return
-            }
-        }
-    }
 }
 
