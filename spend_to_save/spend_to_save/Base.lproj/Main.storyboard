@@ -50,7 +50,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTL-vu-5bC">
                                 <rect key="frame" x="285" y="333" width="64" height="64"/>
-                                <state key="normal" image="orange-arrow">
+                                <state key="normal" image="arrow-32-65">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -392,8 +392,8 @@
                         <viewLayoutGuide key="safeArea" id="JHE-Mv-PgU"/>
                     </view>
                     <connections>
-                        <outlet property="addGoalButton" destination="W6a-et-Xdt" id="aI0-14-ps0"/>
-                        <outlet property="skipButton" destination="Tjb-ld-jDh" id="Oct-kQ-rsa"/>
+                        <outlet property="addGoalButton" destination="W6a-et-Xdt" id="CDg-kn-epu"/>
+                        <outlet property="skipButton" destination="Tjb-ld-jDh" id="58X-SX-DTJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gm1-Ru-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -403,7 +403,7 @@
     </scenes>
     <resources>
         <image name="008080_Swatch" width="336" height="280"/>
-        <image name="orange-arrow" width="64" height="64"/>
+        <image name="arrow-32-65" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dxN-q2-mJI"/>

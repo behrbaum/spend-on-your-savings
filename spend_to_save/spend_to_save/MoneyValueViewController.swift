@@ -2,7 +2,7 @@
 //  MoneyValueViewController.swift
 //  spend_to_save
 //
-//  Created by OIDUser on 1/25/19.
+//  Created by OIDUser on 1/29/19.
 //  Copyright © 2019 OIDUser. All rights reserved.
 //
 
@@ -10,9 +10,8 @@ import UIKit
 
 class MoneyValueViewController: UIViewController {
 
-    
-    @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +20,7 @@ class MoneyValueViewController: UIViewController {
         logoutButton.layer.cornerRadius = 5
         logoutButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
         
-        // Pad and round the '+' Button
+        // Pad and round the 'Plus' Button
         plusButton.layer.cornerRadius = 5
         plusButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 7,right: 10)
     }
