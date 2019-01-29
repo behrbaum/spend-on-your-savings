@@ -13,6 +13,8 @@ class AddGoalViewController: UIViewController {
     @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var addGoalButton: UIButton!
     
+    // Adding a comment to make this different
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

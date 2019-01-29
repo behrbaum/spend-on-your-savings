@@ -10,8 +10,10 @@ import UIKit
 
 class MoneyValueViewController: UIViewController {
 
-    @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    
+    // Adding a comment to make this different
     
     override func viewDidLoad() {
         super.viewDidLoad()

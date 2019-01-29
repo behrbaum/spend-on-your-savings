@@ -40,11 +40,21 @@
                                 <color key="textColor" red="0.93333333330000001" green="0.46274509800000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElZ-rI-leU">
+                                <rect key="frame" x="315" y="65" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="LZh-tn-Bdn"/>
+                                    <constraint firstAttribute="height" constant="35" id="dWB-hx-lYR"/>
+                                </constraints>
+                                <state key="normal" image="info-2-64"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ElZ-rI-leU" firstAttribute="top" secondItem="2fb-z0-XQI" secondAttribute="top" constant="45" id="BRV-en-Z32"/>
                             <constraint firstItem="7aQ-Ne-DcC" firstAttribute="top" secondItem="2fb-z0-XQI" secondAttribute="top" constant="45" id="WmF-0q-At0"/>
                             <constraint firstItem="7aQ-Ne-DcC" firstAttribute="centerX" secondItem="kbz-8a-2Az" secondAttribute="centerX" id="bk6-fc-oAE"/>
+                            <constraint firstItem="2fb-z0-XQI" firstAttribute="trailing" secondItem="ElZ-rI-leU" secondAttribute="trailing" constant="25" id="xBL-Og-4Cu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2fb-z0-XQI"/>
                     </view>
@@ -68,9 +78,21 @@
                                 <color key="textColor" red="0.93333333330000001" green="0.46274509800000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGs-hW-F77">
+                                <rect key="frame" x="305" y="75" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="KcR-iZ-xrT"/>
+                                    <constraint firstAttribute="width" constant="45" id="YQ4-6s-sae"/>
+                                </constraints>
+                                <state key="normal" image="plus-64">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fBd-nu-XYP" firstAttribute="trailing" secondItem="fGs-hW-F77" secondAttribute="trailing" constant="25" id="5Ga-CW-iyz"/>
+                            <constraint firstItem="fGs-hW-F77" firstAttribute="top" secondItem="fBd-nu-XYP" secondAttribute="top" constant="55" id="9JF-Bz-aDo"/>
                             <constraint firstItem="Eq1-sx-cLj" firstAttribute="centerX" secondItem="Bpj-Jf-0fd" secondAttribute="centerX" id="TCM-8g-brX"/>
                             <constraint firstItem="Eq1-sx-cLj" firstAttribute="top" secondItem="fBd-nu-XYP" secondAttribute="top" constant="45" id="biX-ai-eDh"/>
                         </constraints>
@@ -116,12 +138,13 @@
                                 <color key="textColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-lm-Q4e">
-                                <rect key="frame" x="292" y="80" width="58" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.81960784310000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
-                                <state key="normal" title="+">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-lm-Q4e">
+                                <rect key="frame" x="305" y="75" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2Ms-fo-7t5"/>
+                                    <constraint firstAttribute="width" constant="45" id="Ode-Ty-sMM"/>
+                                </constraints>
+                                <state key="normal" image="plus-64">
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -130,12 +153,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bC3-lm-Q4e" firstAttribute="top" secondItem="5gR-HJ-r2m" secondAttribute="top" constant="55" id="BW4-Y8-VDZ"/>
+                            <constraint firstItem="5gR-HJ-r2m" firstAttribute="trailing" secondItem="bC3-lm-Q4e" secondAttribute="trailing" constant="25" id="w1G-X7-cdk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5gR-HJ-r2m"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home-7-32" selectedImage="home-7-32" id="3gk-ex-OXG"/>
                     <connections>
-                        <outlet property="logoutButton" destination="hDI-wH-Fpf" id="mlz-6W-QSH"/>
-                        <outlet property="plusButton" destination="bC3-lm-Q4e" id="LEQ-He-Q0x"/>
+                        <outlet property="logoutButton" destination="hDI-wH-Fpf" id="8Qc-7r-eMg"/>
+                        <outlet property="plusButton" destination="bC3-lm-Q4e" id="2lZ-rd-1Qk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcp-9P-O59" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,6 +193,8 @@
     </scenes>
     <resources>
         <image name="home-7-32" width="25" height="25"/>
+        <image name="info-2-64" width="64" height="64"/>
+        <image name="plus-64" width="64" height="64"/>
         <image name="trophy-32" width="25" height="25"/>
         <image name="user-25" width="25" height="25"/>
     </resources>

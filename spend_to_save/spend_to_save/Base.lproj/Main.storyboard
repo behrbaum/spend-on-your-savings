@@ -392,8 +392,8 @@
                         <viewLayoutGuide key="safeArea" id="JHE-Mv-PgU"/>
                     </view>
                     <connections>
-                        <outlet property="addGoalButton" destination="W6a-et-Xdt" id="CDg-kn-epu"/>
-                        <outlet property="skipButton" destination="Tjb-ld-jDh" id="58X-SX-DTJ"/>
+                        <outlet property="addGoalButton" destination="W6a-et-Xdt" id="brU-sj-hNx"/>
+                        <outlet property="skipButton" destination="Tjb-ld-jDh" id="2RP-15-sf9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gm1-Ru-9HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
